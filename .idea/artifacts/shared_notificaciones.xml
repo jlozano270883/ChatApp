@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="shared-notificaciones">
+    <output-path>$PROJECT_DIR$/shared-notificaciones/build/libs</output-path>
+    <root id="archive" name="shared-notificaciones.jar">
+      <element id="module-output" name="ChatApp.shared-notificaciones.androidMain" />
+    </root>
+  </artifact>
+</component>
