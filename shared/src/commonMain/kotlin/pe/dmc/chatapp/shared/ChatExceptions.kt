@@ -10,6 +10,7 @@ import kotlin.random.Random
 class MensajeInvalidoException(mensaje: String) : Exception(mensaje)
 class UsuarioNoAutenticadoException : Exception("No hay una sesión activa")
 
+@Throws(MensajeInvalidoException::class, UsuarioNoAutenticadoException::class)
 fun enviarMensaje(usuario: Usuario?, texto: String): Mensaje {
     if (usuario == null) throw UsuarioNoAutenticadoException()        // regla 1: sesión activa
     if (texto.isBlank()) throw MensajeInvalidoException("El mensaje no puede estar vacío")   // regla 2
