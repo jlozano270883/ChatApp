@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.kotlin.multiplatform)
     alias(libs.plugins.android.kotlin.multiplatform.library)
     alias(libs.plugins.android.lint)
+    alias(libs.plugins.kotlin.compose)
 }
 
 kotlin {
@@ -67,7 +68,11 @@ kotlin {
                 // Add KMP dependencies here
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1")
                 implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.0")
-
+                implementation("org.jetbrains.compose.runtime:runtime:1.7.0")
+                implementation("org.jetbrains.compose.foundation:foundation:1.7.0")
+                implementation("org.jetbrains.compose.material3:material3:1.7.0")
+                implementation("org.jetbrains.compose.ui:ui:1.7.0")
+                implementation("org.jetbrains.androidx.navigation:navigation-compose:2.8.0-alpha10")
             }
         }
 
